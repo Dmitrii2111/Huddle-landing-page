@@ -67,6 +67,8 @@ html, body{
          }
          input:hover {
             cursor: pointer;
+            background: hsl(300, 69%, 71%);
+            color: white;
          }
       }
    }
@@ -83,12 +85,14 @@ html, body{
             border: 1px solid white;
             border-radius: 25px;
             padding: 10px;
-            margin-left: 15px;
+            margin-left: 28px;
          }
          ion-icon:hover {
             cursor: pointer;
             transform: scale(1.2);
             transition-duration: 1s;
+            color: hsl(300, 69%, 71%);
+            border-color: hsl(300, 69%, 71%);
          }
       }
       .attribution{
@@ -100,5 +104,35 @@ html, body{
       }
    }
 }
-
+@media (max-width: 375px) {
+   .layout{
+      height: 100%;
+      header{
+         height: 100px;
+      }
+      main{
+         flex-direction: column;
+         .preview{
+            height: 260px;
+         }
+         .text_block{
+            padding-top: 25px;
+            text-align: center;
+            padding-left: unset;
+            h1{
+               font-size: 24px;
+            }
+            input{
+               height: 45px;
+            }
+         }
+      }
+      footer{
+         .social{
+            text-align: center;
+         }
+         
+      }
+   }
+}
 

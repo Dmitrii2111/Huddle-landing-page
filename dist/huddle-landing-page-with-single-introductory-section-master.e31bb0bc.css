@@ -70,6 +70,8 @@ html, body {
 }
 .layout main .text_block input:hover {
   cursor: pointer;
+  background: #e882e8;
+  color: white;
 }
 .layout footer {
   width: 90%;
@@ -86,12 +88,14 @@ html, body {
   border: 1px solid white;
   border-radius: 25px;
   padding: 10px;
-  margin-left: 15px;
+  margin-left: 28px;
 }
 .layout footer .social ion-icon:hover {
   cursor: pointer;
   transform: scale(1.2);
   transition-duration: 1s;
+  color: #e882e8;
+  border-color: #e882e8;
 }
 .layout footer .attribution {
   font-size: 11px;
@@ -99,4 +103,33 @@ html, body {
 }
 .layout footer .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 375px) {
+  .layout {
+    height: 100%;
+  }
+  .layout header {
+    height: 100px;
+  }
+  .layout main {
+    flex-direction: column;
+  }
+  .layout main .preview {
+    height: 260px;
+  }
+  .layout main .text_block {
+    padding-top: 25px;
+    text-align: center;
+    padding-left: unset;
+  }
+  .layout main .text_block h1 {
+    font-size: 24px;
+  }
+  .layout main .text_block input {
+    height: 45px;
+  }
+  .layout footer .social {
+    text-align: center;
+  }
 }
